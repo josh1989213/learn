@@ -1,0 +1,59 @@
+/*權重最大     0-       0-    0-    0-     0   權重最小*/
+/*         !important style #id .class element*/
+/*同階層的樣式 權重分數可以累加 如兩個.class 權重分數為0-0-0-2-0*/
+#card{
+	width: 400px;
+	/*#id 權重分數 0-0-1-0-0*/
+}
+.色票{
+	
+	width: 300px;
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+	
+	/*border: 5px dashed black;*/
+	/*.class權重分數 0-0-0-1-0*/
+}
+div{
+	
+	width: 500px !important ;
+}
+/*div 權重分數 0-0-0-0-1*/
+/*加入!important的div 權重分數 1-0-0-0-0*/
+.色票 .color{
+/*關於權重後寫的會覆蓋前面的*/
+
+	font-size: 20px;
+	font-family: 微軟正黑體;
+	/*background-color: #ccc;*/
+	color: #fff;
+	line-height: 2;
+	text-align: center;
+	margin: 0;
+
+}
+.色票 .color1{
+	background-color: #000;
+}
+/*.色票.color1 兩個都是 .class的樣式，權重分數0-0-0-2-0*/
+
+.color1{
+	background-color: #ACDBC9;
+	/*權重分數 0-0-1-0*/
+}
+
+.color2{
+	background-color: #DBEBC2;
+}
+.color3{
+	background-color: #FDD2B5;
+}
+.color4{
+	background-color: #F7A7A6;
+}
+.color5{
+	background-color: #F48B94;
+	height: 200px;
+}
+#colorGrean{
+height: 60px;
+}
