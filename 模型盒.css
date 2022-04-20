@@ -1,0 +1,71 @@
+#card{
+	width: 400px;
+}
+.色票{
+	
+	width: 300px;
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+	border: 5px dotted blue;
+	/*solid 實線 dashed 虛線 inset 嵌入線 dotted 點線 */
+	height: 600px;
+	/*觀察:div區塊的height被修改為600px，黃色是背景色，因為一開始沒有
+	設定高度，所以後面由height定義高度 黃色那塊是多出來的，標示用*/
+	background-color: yellow;
+	padding: 50px 35px 10px 33px ;
+	/*padding: 50px向內推擠縮50px*/
+	/*padding: 50px 35px 前面是上下 後面是左右*/
+	/*padding: 50px 上 35px 又 10px 下 33px 左;*/
+	margin: 50px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	/*box-sizing的前墜寫法，依照各家瀏覽器不同而使用
+	webkit= safari 跟 chrome
+	mos=firefoxy
+	*/
+	box-sizing: border-box;
+	/*盒模型大小依照"邊界"為主，底下div的!important設定寬為500px，故模型盒可見大小為500px，
+	'觀察: border跟padding向內推擠，marge 50 +border 5 + padding 33 +內容 422 =width=500px  
+	*/
+	overflow: hidden;
+	/*用此修復margin塌陷*/
+	/*關於Margin塌陷 及修復 https://juejin.cn/post/6976272394247897101*/
+}
+div{
+	
+	width: 500px !important ;
+}
+.色票 .color{
+
+	font-size: 20px;
+	font-family: 微軟正黑體;
+	/*background-color: #ccc;*/
+	color: #fff;
+	line-height: 2;
+	text-align: center;
+	margin: 0;
+
+}
+.色票 .color1{
+	background-color: #000;
+}
+
+.color1{
+	background-color: #ACDBC9;
+}
+
+.color2{
+	background-color: #DBEBC2;
+}
+.color3{
+	background-color: #FDD2B5;
+}
+.color4{
+	background-color: #F7A7A6;
+}
+.color5{
+	background-color: #F48B94;
+	height: 200px;
+}
+#colorGrean{
+height: 60px;
+}
