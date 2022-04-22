@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>display關於「顯示」屬性筆記</title>
+	<link rel="stylesheet" href="display關於「顯示」屬性筆記.css">
+</head>
+<body>
+	<p class="box02"></p>
+
+<!-- 在block的模式下，即便設置寬度300px，
+	但可看到margin佔據整行 撐滿body 盒模型塞滿滿*/ -->
+	
+	<div class="box01"></div>
+	<div class="box01"></div>
+	<div class="box01"></div>
+	<!-- 注意box跟box01 <>寫法的差別 -->
+
+	<div class="box">YOOOOOO</div
+	><div class="box"></div
+	><div class="box"></div>
+
+<!-- 注意1: inline-block跟inlineblock間會有間隔(4~8px)原因來自於程式碼換行的問題 ，所以將<>符號用上面的寫法，
+	瀏覽器就會認為沒有換行了-->
+<!-- 注意2:撐差不齊的排版，常見於有有寫內容的時候，須注意垂直排列的問題 -->
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Expedita <span>perspiciatis  cum alias tempora,</span> molestias magnam, <br>repudiandae <img src="https://cs-e.ecimg.tw/items/QFAW7PA9009QO23/i010001_1547633475.jpg" alt=""> ea vero consequaturperferendis.</p><a href="https://josh1989213.github.io/learn/%E6%A8%A1%E5%9E%8B%E7%9B%92%E7%AD%86%E8%A8%98.html">我愛打手槍</a>
+</body>
+</html>
