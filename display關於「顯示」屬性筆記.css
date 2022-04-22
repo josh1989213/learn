@@ -1,0 +1,52 @@
+.box{
+	height: 300px;
+	background-color: yellow;
+	display:inline-block;
+	/*大部分元素 display的預設屬性:block*
+	block 行內元素佔據整行
+	inline-block 行內區塊元素*/
+	width: 300px;
+/*觀察: 在block的模式下，即便設置寬度300px，
+但可看到margin佔據整行 撐滿body 盒模型塞滿滿*/
+/*觀察2:inline-block 設置高300寬300就不會變了 且元素會排列在行內，
+如.box .box .box  */
+vertical-align: top;
+/*垂直排列的元素排版方式: 強制向上 解決跑板問題*/
+}
+
+.box01{
+	height: 300px;
+	width: 300px;
+	background-color: red;
+	display: inline-block;
+
+}
+.box02{
+	height: 300px;
+	width: 300px;
+	background-color: blue;
+	display: block;
+
+}
+span{
+	color:blue;
+	display: inline;
+	margin-bottom: 20px;
+/*inline屬性 強制所有圖或文都在同一行中*/
+/*注意! inline屬性寬高 上下外內距都是不能調整的
+(如padding margin margin-top等等)，
+需要調整的話須把inline用其他dispaly屬性取代之*/
+/*見鬼了 還是有些樣式調整有效....*/
+/*<a><span><img> 預設inline*/
+}
+img{
+	display: inline-block;
+	height: 50px;
+	width: 50px;
+	padding: 10px;
+
+}
+a{
+	display: none;
+	/*none 顧名思義 使其消失，但是在瀏覽器中的開發人員工具還是能看到喔*/
+}
