@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>css reset 初始化</title>
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="CSS初始化筆記.css">
+ 	<!-- 觀察1:權重問題，後寫上的link會改寫前面的，所以reset.css擺前面以免覆蓋自己寫的css初始化筆記.CSS -->
+ 	<!-- 觀察2:初始化前chrome瀏覽器會看到margin: 8 px 那是瀏覽器預設的，每個瀏覽器數值略有不同，但初始化後margin就不見了。 -->
+</head>
+<body>
+	<div class="色票">
+		<p class="color color1">#ACDBC9</p>
+		<p class="color color2">#DBEBC2</p>
+		<p class="color color3">#FDD2B5</p>
+		<p class="color color4">#F7A7A6</p>
+		<p class="color color5">#F48B94</p>
+	</div>
+	<div>跟色票無關的區塊</div>
+	<div>
+		<h1 style="color: white; background-color: brown; box-shadow: 5px 3px yellow; display: inline; margin: 10px; font-weight: bold;" >注意</h1>
+		<span style="color: red; font-size: 20px;">只要新開一個網頁 就應該做初始化的動作</span>
+		<br>避免各個瀏覽器的預設數值干擾，也可減少多餘的標籤使用。
+		<p> <br>觀察1:權重問題，後寫上的link會改寫前面的，所以reset.css擺前面以免覆蓋自己寫的css初始化筆記.CSS -->
+ 		<br>觀察2:初始化前chrome瀏覽器會看到margin: 8 px 那是瀏覽器預設的，每個瀏覽器數值略有不同，但初始化後margin就不見了。 
+ </p>
+<span style="font-size: 30px;">本筆記的reset.css日後可套用在任何專案中</span>
+	</div>
+</body>
+</html>
