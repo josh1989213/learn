@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Position定位之z-index</title>
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="z-index.css">
+</head>
+<body>
+	<h1>關於z-index</h1>
+	<span>網頁其實有三個軸x y z <br>
+			原點是瀏覽器的左上角<br>
+			<span style="color: blue;">x軸向右為正</span><br>
+
+			<span style="color: skyblue;">y軸向下為正</span><br>
+
+			<span style="color: deepskyblue;">z軸就是網頁到使用者的方向</span> <br>
+
+			用這樣的概念解釋元素重疊的層級問題。
+
+	</span>
+	<h2>層級的規則</h2>
+	<span style="font-size: 20px;">規則一:</span><p>後面寫的會覆蓋前面的</p><p>觀察:當relative1 relative2同時屬性加上z-index : -1時，會發現relative2還是在上層</p><br>
+
+	<span style="font-size: 20px;">規則二:</span><p>同時有定位元素以及非定位元素，定位元素會是上層(預設)</p>
+	<h3>備註</h3>
+	<p>z-index的負值，通常用於將定位元素藏匿在非定位元素後方</p>
+	<p>z-index對於前端設計師來說是極為重要的屬性</p>
+	<p>當一個專案有很多元素如彈出視窗、隱藏物件等等就會設定很多z-index，<br> 注意使用的區間，不要讓管理變得凌亂</p>
+	<div class="post relative1">relative1</div>
+	<div class="post relative2">relative2</div>
+	<div class="post non-relative">non-relative</div>
+
+</body>
+</html>
