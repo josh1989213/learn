@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>變形 transfom</title>
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="變形.css">
+</head>
+<body>
+	<h1>transfom屬性</h1>
+	<span>transfom屬性是CSS3正式使用記得加前餟</span>
+
+
+	<span style="margin: 5px;">可以在開發人員工具裡面測試數值帶來的變化!!</span>
+	
+	<div class="outter1">
+		<div class="box1">變形盒1</div>
+		<span>變形1:旋轉</span><br>
+		<span>transform: rotate(30deg);</span><br>
+		<span>數值可用正負數</span>
+	</div>
+	<div class="outter2">
+		<div class="box2">變形盒2</div>
+		<span>變形2:旋轉 <br> XYZ軸可單獨設定</span>
+		<span>transform: rotateZ(328deg);</span>
+	</div>
+	<div class="outter3">
+		<div class="box3">變形盒3</div>
+		<span>變形3:移動</span>
+		<span>水平與垂直的移動，<br>transform: translate(10px,30px);<br>
+		前是X 後是Y
+		</span>
+	</div>
+	<div class="outter4">
+		<div class="box4">變形盒4</div>
+		<span>變形4:置中</span>
+		<span>利用position:absolute跟translate做出置中效果。</span>
+	</div>
+	<div class="outter5">
+		<div class="box5">變形盒5</div>
+		<span>變形5:壓縮</span>
+		<span>transform: skewY(316deg) <br>壓縮方式有skew，也有對XYZ軸的壓縮</span>
+	</div>
+	<div class="outter6">
+		<div class="box6">變形盒6</div>
+		<span>變形6:倍率</span>transform: scale(1.5) <br>
+		將本體放大或縮小
+	</div>
+	<div class="outter7">
+		<div class="box7">變形盒7</div>
+		<span>變形7:兩種變形屬性一起用 <br>transform: scale(2.0
+) rotate(67deg)</span>
+	</div>
+</body>
+</html>

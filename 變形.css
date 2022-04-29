@@ -1,0 +1,159 @@
+span{
+	display: block;
+}
+.outter1{
+width: 200px;
+height: 200px;
+border: 5px dotted black;
+position: relative;
+display: inline-block;
+}
+.outter2{
+width: 200px;
+height: 200px;
+border: 5px dotted black;
+position: relative;
+display: inline-block;
+vertical-align: top;
+}
+.outter3{
+width: 200px;
+height: 200px;
+border: 5px dotted black;
+position:relative;
+display: inline-block;
+vertical-align: top;
+}
+.outter4{
+width: 200px;
+height: 200px;
+border: 5px dotted black;
+position: relative;
+display: inline-block;
+vertical-align: top;
+}
+.outter5{
+width: 200px;
+height: 200px;
+border: 5px dotted black;
+position: relative;
+display: inline-block;
+vertical-align: top;
+}
+.outter6{
+width: 200px;
+height: 200px;
+border: 5px dotted black;
+position: relative;
+display: inline-block;
+vertical-align: top;
+}
+.outter7{
+width: 200px;
+height: 200px;
+border: 5px dotted black;
+position: relative;
+display: inline-block;
+vertical-align: top;
+}
+.box1{
+width: 55px;
+height: 55px;
+color: white;
+font-size: 15px;
+font-weight: bold;
+font-family: initial;
+background-color: brown;
+position: absolute;
+top: 110px;
+left: 70px;
+z-index: -1;
+transform: rotate(30deg);
+}
+.box2{
+width: 55px;
+height: 55px;
+color: white;
+font-size: 15px;
+font-weight: bold;
+font-family: initial;
+background-color: brown;
+position: absolute;
+top: 70px;
+left: 70px;
+z-index: -1;
+transform: rotateZ(328deg);
+}
+
+.box3{
+width: 55px;
+height: 55px;
+color: white;
+font-size: 15px;
+font-weight: bold;
+font-family: initial;
+background-color: brown;
+position: absolute;
+top: 70px;
+left: 70px;
+z-index: -1;
+transform: translate(60px,30px);
+}
+.box4{
+width: 55px;
+height: 55px;
+color: white;
+font-size: 15px;
+font-weight: bold;
+font-family: initial;
+background-color: brown;
+position: absolute;
+top: 50%;
+left: 50%;
+z-index: -1;
+transform: translate(-50%,-50%);
+}
+.box5{
+width: 55px;
+height: 55px;
+color: white;
+font-size: 15px;
+font-weight: bold;
+font-family: initial;
+background-color: brown;
+position: absolute;
+top: 50%;
+left: 50%;
+z-index: -1;
+transform: skewY(316deg);
+}
+.box6{
+width: 55px;
+height: 55px;
+color: white;
+font-size: 15px;
+font-weight: bold;
+font-family: initial;
+background-color: brown;
+position: absolute;
+top: 50%;
+left: 50%;
+z-index: -1;
+transform: scale(1.5
+);
+}
+.box7{
+width: 55px;
+height: 55px;
+color: white;
+font-size: 15px;
+font-weight: bold;
+font-family: initial;
+background-color: brown;
+position: absolute;
+top: 50%;
+left: 50%;
+z-index: -1;
+transform: scale(2.0
+) rotate(67deg);  
+}
