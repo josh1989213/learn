@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>偽元素筆記</title>
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="偽元素.css">
+</head>
+<body>
+	<h1>偽元素筆記</h1>
+	<a class="bnt" href="#">點下去人生會不一樣</a>
+
+	<br><span>after before 就是所謂的偽元素，<br>
+	用來新增元素，不用寫在html中<br>亦可使html中的程式碼看起來簡潔且管理便利，<br> 在css的class中選擇要生成的類別選擇器如".bnt" <br> 直接在後面加上即可寫法如:
+
+	<br>.bnt:before{
+	content: "before";}
+	
+	</span>
+	<h3>規則</h3>
+<ul>
+		<li>content:""是一定要寫的，否則無法成立偽元素</li>
+		<li>""中可以寫入文字，也可以甚麼都不寫</li>
+		<li>預設屬性display:inline，所以要設定長寬高必須改寫display屬性 如display:inline-block</li>
+		
+	</ul>
+
+	<span>
+	<br></span>
+	<br><h1 style="color: brown;">樣式示範</h1>
+
+	<a class="bnt2" href="#">別點了 明天還是要上班</a>
+	<ul>
+		<li>其他語法:transiton: width,0.5s 的意思是 時間延遲 :選擇寬度屬性 延遲0.5秒</li>
+		<li>想讓線條反向長出來 可改變定位點 <br> 	如.bnt2{....right 0px;改成left }</li>
+		<li>如果線條想要從中間出發呢?，以.bnt:after為例子,<br>參考css中寫法，運用absolute將向左推50% 和translate -50%的寫法
+		</li>
+
+	</ul>
+		
+
+
+</body>
+</html>

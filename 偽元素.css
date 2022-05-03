@@ -1,0 +1,77 @@
+.bnt{
+	color: black;
+	text-decoration: none;
+	font-size: 30px;
+	display:inline-block;
+	position: relative;
+	margin-bottom: 5px;
+	border: 5px outset red;
+}
+.bnt:hover{
+	color: white;
+	background-color: darkred;
+}
+.bnt:active{
+	color: red;
+	border: 5px inset gray;
+	background-color: white;
+}
+.bnt:before{
+	content: "before";
+}
+.bnt:after{
+	content: "after";
+}
+
+.bnt2{
+	color: black;
+	text-decoration: none;
+	font-size: 30px;
+	position: relative;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border: 5px outset gray;
+
+
+}
+.bnt2:hover{
+	color: white;
+	background-color: black;
+
+}
+.bnt2:active{
+	color: red;
+	border: 5px inset navy;
+}
+.bnt2:before{
+	content: "";
+	display: inline-block;
+	background-color: yellow;
+	width: 0%;
+	height: 3px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+
+}
+.bnt2:after{
+	content: "";
+	display: inline-block;
+	background-color: yellow;
+	width: 0%;
+	height: 3px;
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	transform: translate(-50%);
+}
+.bnt2:hover:before{
+	background-color: red;
+	width: 100%;
+	transition: width,0.5s;
+}
+.bnt2:hover:after{
+	background-color: red;
+	width: 100%;
+	transition: width,0.5s;
+}
