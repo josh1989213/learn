@@ -14,7 +14,7 @@ div{
 	height: 150px;
 	background-color: darkred;
 	position: absolute;
-	top: 70%;
+	top: 65%;
 	left: 50px;
 
 }
@@ -50,7 +50,7 @@ padding-bottom: 100px;
 .不見的錢:hover:after{
 
 
-	background-image:url(http://i1.kknews.cc/WuK6xwgQjwHo2-AuvyFmmheoXW2rMSGfzQ/0.jpg) ;
+	background-image: url(http://i1.kknews.cc/WuK6xwgQjwHo2-AuvyFmmheoXW2rMSGfzQ/0.jpg) ;
 	background-size: 300px 300px;
 	transition-property: background-image;
 	transition-duration: 1s;
