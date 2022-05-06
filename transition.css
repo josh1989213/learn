@@ -45,14 +45,14 @@ padding-bottom: 100px;
 	height: 300px;
 	background-image: url(https://img.news.ebc.net.tw/EbcNews/news/2019/01/26/1548516246_40231.jpg);
 	background-size:400px 300px;
-	ackground-size: 300px 300px;
+	
 }
 
 .不見的錢:hover:after{
 
 	-webkit-
 	-moz-
-	background-image: url(http://i1.kknews.cc/WuK6xwgQjwHo2-AuvyFmmheoXW2rMSGfzQ/0.jpg) ;
+	background-image: url(https://pic1.zhimg.com/v2-cf37539df9b29dc09fac63707c38d9d8_1440w.jpg) ;
 	background-size: 300px 300px;
 	transition-property: background-image;
 	transition-duration: 1s;
