@@ -49,7 +49,8 @@ padding-bottom: 100px;
 
 .不見的錢:hover:after{
 
-
+	-webkit-
+	-moz-
 	background-image: url(http://i1.kknews.cc/WuK6xwgQjwHo2-AuvyFmmheoXW2rMSGfzQ/0.jpg) ;
 	background-size: 300px 300px;
 	transition-property: background-image;
