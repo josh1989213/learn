@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>轉場屬性transition</title>
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="transition.css">
+</head>
+<body>
+	<h1>轉場屬性transition</h1>
+	<span>運用轉場效果讓畫面看起來很生動</span>
+	<ul>
+		<li>transition-property:屬性,屬性,屬性..,..;<br>這是宣告要轉場的屬性 </li>
+		<li>transition-duration:1s,2s <br>這是宣告各屬性變畫秒數，按照transition-property的順序寫</li>
+		<li>transition-delay: 1s 效果延遲發生的寫法</li>
+		<li>transition-timing-function 使用貝茲曲線控制動畫特效的時間,寫cubic-bezier( x,x,x,x)，transition就按照(x,x,x,x)的方式轉場</li>
+		<li>transition-timing-function:ease-in; 使用ease-in;的方式轉場 <br>另外cubic-bezier(0.42,0,1,1)等於ease-in</li>
+		<li>關於cubic-bezier的用法可以 <a href="https://www.w3schools.com/cssref/css3_pr_transition-timing-function.asp" target="blank">參考w3hschool的敘述</a></li>
+		<li>transiton縮寫的寫法 <br> 
+			transtion: width 0.2s 0.4s,height 0.4s 0.7s; <br> 值跟值之間用,分開即可,前面的秒數是duration 後面是 delay
+
+		</li>
+
+	</ul>
+	<div class="box">天才變變變</div>
+
+	<h1 style="margin-top: 200px;">操作練習</h1>
+
+
+	<div class="不見的錢" > 
+		<span style="display: block; color: red; text-shadow: 3px 1px darkslateblue ; font-size: 30px; font-weight: bolder; border: inset 3px gold; background-color: gold; text-align: center; padding: 10px;">摸摸看這些錢</span>
+
+
+
+
+
+
+
+
+
+
+		
+	</div>
+</body>
+</html>
