@@ -1,0 +1,60 @@
+div{
+	position: relative;
+
+}
+.box{
+	display: inline-block;
+
+	color: white;
+	font-size: 25px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 150px;
+	width: 150px;
+	height: 150px;
+	background-color: darkred;
+	position: absolute;
+	top: 70%;
+	left: 50px;
+
+}
+.box:hover{
+	width: 200px;
+	height: 200px;
+	background-color: blue;
+	border-radius: 50%;
+	transition-property:width,height,background-color,border-radius;
+	transition-duration: 2s,3s,4s,1s;
+	/*transition-delay: 1s;*/
+	transition-timing-function:ease-in;
+}
+
+.不見的錢{
+
+display: inline-block;
+margin: 50px;
+padding-bottom: 100px;
+
+}
+.不見的錢:after{
+
+	content: "一秒被狗咬";
+	display: inline-block;
+	width: 300px;
+	height: 300px;
+	background-image: url(https://img.news.ebc.net.tw/EbcNews/news/2019/01/26/1548516246_40231.jpg);
+	background-size:400px 300px;
+	ackground-size: 300px 300px;
+}
+
+.不見的錢:hover:after{
+
+
+	background-image:url(http://i1.kknews.cc/WuK6xwgQjwHo2-AuvyFmmheoXW2rMSGfzQ/0.jpg) ;
+	background-size: 300px 300px;
+	transition-property: background-image;
+	transition-duration: 1s;
+	
+
+
+}
