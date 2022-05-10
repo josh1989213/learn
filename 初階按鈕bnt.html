@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>初階按鈕實作</title>
+	<link rel="stylesheet" href="初階按鈕bnt.css">
+</head>
+<body>
+	<h1 style="font-family: 微軟正黑體;">初階按鈕實作</h1>
+	<h2>小小筆記</h2>
+	<div class="wrapper">
+		<ul style="display: inline-block; position: relative;
+		top: 100px; z-index:0; color: white;">
+			<li>css中的*{}代表選擇所有的標籤，所有標籤裡都這樣設定的意思</li>
+			<li>*這個選擇器是權重最低的</li>
+			<li>*{
+				position: relative;
+			}<br>這是設計師們很常用的方法</li>
+			<li>關於歸零，這裡沒有呼叫reset.css所以用html,body{
+			padding: 0;
+			margin: 0;
+			height: 100%;}來做歸零，<br>height高度撐開100% 依據視窗大小，如果沒有寫的話就是按造內容大小了
+		
+			}</li>
+			<li>使用padding而不是固定寬高可以讓外框自動調整，可以隨意增加字數</li>
+			<li>當border-radius:是方框的一半(line-heghit+padding=44px)時就會變成橢圓囉</li>
+			<li>當寫上 position:absolut的時候就會脫離display的框架了，所以把display: inline-block註解掉</li>
+			<li>在.bnt:before的圓形是這樣做的 <br>width: 100% padding-top: 100% <br>width的100%依據來自於a連結的寬度，padding-top(內距-上)的100%依據是width的寬度，所以會呈現1:1的數字，變成正方形，不能直接用height: 100%是因為這個100依據來自a連結的寬 出來結果不會是1:1的 <br>最後加個border-radius: 50%;就變成正圓形了</li>
+			<li>overflow: hidden; 隱藏多餘的部分</li>
+			<li>box-shadow: 0 10px 5px rgba(90, 93, 93, 0.5);值的說明如下 x軸 y軸 模糊值 rgba</li>
+		</ul>
+		<a class="bnt" href="#"><span>按屁 你他媽手賤</span></a>
+
+	</div>
+</body>
+</html>
