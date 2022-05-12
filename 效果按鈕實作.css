@@ -1,0 +1,109 @@
+*{
+	position: relative;
+}
+li{
+	font-size: 5px;
+
+}
+html,body{
+
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+}
+.olli{
+	color: white;
+	z-index: 1;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+.wrapper{
+	background-color: black;
+	height: 100%;
+}
+.bnt{
+	font-family: 微軟正黑體;
+	font-size: 20px;
+	background-color: gold;
+	color: gold;
+	width:104px;
+	text-decoration: none;
+	border: 1.5px solid gold;
+	border-radius: 52px;
+	line-height: 104px;
+	position: absolute;
+	top: 30px;
+	right: 100px;
+	overflow: hidden;
+}
+.bnt span{
+	white-space: nowrap;
+	
+}
+.bnt:hover{
+	padding: 0px 25px;
+	width: auto;
+	transition: all 0.3s;
+	background-color: black;
+	color: white;
+
+}
+.bnt:after{
+	content: "+";
+	font-size: 56px;
+	color: black ;
+	line-height: 35px;
+	position: absolute;
+	top: 31px;
+	right: 31px;
+}
+.bnt:hover:after{
+	content: "";
+}
+
+
+.bnt2{
+	font-family: 微軟正黑體;
+	font-size: 20px;
+	background-color: gold;
+	color: white;
+	width:104px;
+	text-decoration: none;
+	border: 1.5px solid gold;
+	border-radius: 52px;
+	line-height: 104px;
+	position: absolute;
+	top: 158px;
+	right: 100px;
+	overflow: hidden;
+}
+.bnt2 span{
+	white-space: nowrap;
+
+	opacity: 0;
+}
+.bnt2:hover span{
+	opacity: 1;
+}
+.bnt2:hover{
+	padding: 0px 25px;
+	width: auto;
+	transition: all 0.3s;
+	background-color: black;
+	color: white;
+
+}
+.bnt2:after{
+	content: "+";
+	font-size: 56px;
+	color: black ;
+	line-height: 35px;
+	position: absolute;
+	top: 31px;
+	right: 31px;
+}
+.bnt2:hover:after{
+	opacity: 0;
+
+}
