@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>動畫屬性以及關鍵影格</title>
+	<link rel="stylesheet" href="動畫屬性以及關鍵影格.css">
+</head>
+<body>
+	<div style="position: absolute; top: 10px; right: 1%; z-index: 1;">
+
+		<h1>動畫屬性以及關鍵影格</h1>
+		<h4>小小筆記</h4>
+
+		<h6>螺旋完跟千鳥是只是示範動畫方向，跟三個動畫元素的互動效果，三個動畫的秒數之間配合</h6>
+		<ol>
+			<li>animation-name 動畫名稱</li>
+			<li>@keyframes 定義動畫要寫這個，關鍵影格的意思</li>
+			<li>寫法是@keyframes+動畫名稱{....
+			}</li>
+			<li>關鍵影格0~100格可任意抓取，本示範抓取兩個影格</li>
+			<li>定義影格內屬性的寫法就是
+				@keyframes 向右{ 
+					0%
+						left: 30%;
+						}
+					100%{
+						left: 70%;
+						}
+					}	
+			</li>
+			<li>animation-duration: 3s; 動畫時間3秒鐘的意思</li>
+			<li>animation-delay: 1s 動畫延遲1秒撥放</li>
+			<li>animation-iteration-count: 3 就是撥放三次的意思</li>
+			<li>animation-iteration-count:infinite 無限播放</li>
+			<li>animation-direction: reverse; 動畫倒轉</li>
+			<li>animation-timing-function動畫的貝茲曲線，跟"轉場效果"的一樣</li>
+			<li>animation-fill-mode:，『動畫填充模式』決定動畫開始或結束的停留狀態，<br>分別為三個值:backwards  「開始前的狀態」、forwards「開始前的狀態」</li>
+			<li>舉例寫上	animation-fill-mode: backwards;時，動畫會停在0%影格的left: 30%;
+			</li>
+			<li>animation-fill-mode: both;動畫填充模式，同時選擇倆著，<br>同時定義開始跟停止的狀態。</li>
+		</ol>
+	</div>
+	
+	<div class="wrapper">
+		<div class="ball"><span>出現了沒有意義的一段話</span>
+		</div>
+		<div class="螺旋丸"></div>
+		<div class="千鳥"></div>
+		<div class="crash"></div>
+		
+		
+	</div>
+		
+
+
+</body>
+</html>
