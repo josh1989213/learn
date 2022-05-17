@@ -1,0 +1,80 @@
+*{
+	position: relative;
+}
+html,body{
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+}
+.wrapper{
+	
+	background-color: gray;
+	height: 100%;
+}
+.btn{
+
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+color: white;
+text-decoration: none;
+border: 3px solid white;
+font-family: Microsoft YaHei;
+font-size: 20px;
+font-weight: bold;
+text-shadow: 0 5px black;
+box-shadow: 5px 5px black; ;
+line-height: 80px;
+text-align: center;
+padding: 10px;
+
+width: 100px;
+height: 80px;
+overflow: hidden;
+}
+.btn:before{
+	content: "";
+
+	height: 320px;
+	width: 320px;
+	background-color: white;
+	border-radius: 130px;
+	
+	position: absolute;
+	top: 80px;
+	left: 50%;
+	transform: translateX(-50%);
+	animation: wave 5s infinite;
+
+}
+@keyframes wave{
+	0%{
+		transform: translateX(-50%) rotate(0deg);
+	}
+	100%{
+		transform: translateX(-50%) rotate(360deg);
+	}
+}
+.btn:hover{
+	color: black;
+	text-shadow: 0 3px grey;
+}
+.btn:hover:before{
+
+	top: 30px;
+	transition: top 1.5s;
+
+}
+.btn:active{
+	color: white;
+	text-shadow: 0 1px black;
+	box-shadow: 1px 1px black;
+	
+}
+.btn:active:before{
+top:1%;
+transition: top 0.1s;
+background-image: url(ql9KzO5YOTCK5COUwR25d4npIR5z9G6p.gif);
+animation: wave 0s 0s;
+}
