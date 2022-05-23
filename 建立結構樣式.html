@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>建立結構樣式</title>
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="建立結構樣式.css">
+</head>
+<body>
+	<div class="note">
+		<h1>建立結構樣式</h1>
+	<h4>小小筆記</h4>
+	<ol>
+		<li>box-sizing: border-box;原本沒有這個屬性的狀況下，加入padding或是border等，都是原本元素的寬高往外再加數值，使用這個屬性後，就是由我們限定的寬度往內去界定邊界或內距</li>
+		<li>background: linear-gradient() ;線性漸層，(括弧)填入色碼</li>
+		<li>預設中色碼的順序是由上往下的</li>
+		<li>perspective是透視感的屬性 ，我們這個範例要「透視」.photo 那這個屬性要寫在.photo的上層「.camera」裡面，<br>寫法如	perspective: 500px;</li>
+		<li>觀察選擇氣.photo:hover .words的transform: translateX(0%); <br>寫在不同的位置會有甚麼效果。</li>
+		<li>"選擇符"的使用方式，如Line:259的.photo .imgBOX 中間使用"空格"，是選則包含在內的元素
+		，.photo:hover~.hand{ 使用 "~引號"，是選擇同層級的元素</li>
+		<li>visibility: hidden;也是將元素藏起的意思</li>
+		<li>overflow: visible;將超出的部分顯示</li>
+	</ol>
+
+	</div>
+	
+	<div class="wrapper">
+		<div class="camera">
+			<div class="lens"></div>
+			<div class="lenbox"></div>
+			<div class="flashlight"></div>
+			<div class="photo">
+				<div class="imgBOX">
+					 <a href="#">
+					 	<img src="0hugiy.gif" alt="">
+					 </a>
+				</div>
+					<div class="words">
+						<h4>點擊圖片 不要讓祂出來</h>
+						<h1>快點阿!!!</h1>
+				</div>
+			</div>
+			<div class="hand"></div>
+		</div>
+
+	</div>
+</body>
+</html>

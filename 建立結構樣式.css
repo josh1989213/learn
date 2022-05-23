@@ -1,0 +1,313 @@
+*{
+	position: relative;
+	box-sizing: border-box;
+	font-family: arial;
+}
+html,body{
+
+height: 150%;
+}
+.note{
+	z-index: 1;
+	position: absolute;
+	top: 10px;
+	color: white;
+}
+.wrapper{
+	height: 70%;
+	background: linear-gradient(#000000,#272727,#3C3C3C,#4F4F4F,#3C3C3C,#272727,#000000) ;
+}
+.camera{
+	width: 300px;
+	height: 200px;
+	border: 10px solid white;
+	border-radius: 50px;
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translate(-55%,-50%);
+	animation: ballup 1s 0.3s backwards , balldown 1s 1.3s,cameraIN 1s 2.3s forwards;
+	perspective: 500px;
+}
+@keyframes ballup{
+	0%{
+		width: 5px;
+		height: 5px;
+		border-radius: 50%;
+		background-color: white;
+		top: 50%;
+	}
+	100%{
+		width: 5px;
+		height: 5px;
+		top: 10%;
+		background-color: white;
+		border-radius: 50%;
+	}
+}
+@keyframes balldown{
+	0%{
+		width: 5px;
+		height: 5px;
+		top: 10%;
+		background-color: white;
+		border-radius: 50%;
+	}
+	100%{
+
+		width: 5px;
+		height: 5px;
+		border-radius: 50%;
+		background-color: white;
+		top: 50%;
+	}
+
+}
+@keyframes  cameraIN{
+	0%{
+		width: 5px;
+		height: 5px;
+		border-radius: 50%;
+		background-color: white;
+		top: 50%;
+	}
+	100%{
+		width: 300px;
+		height: 200px;
+	}
+	}
+.lens{
+	width: 100px;
+	height: 100px;
+	/*border: 15px solid white;*/
+	
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	animation:lensIN 1s 2.3s both;
+
+}
+
+@keyframes lensIN{
+
+	0%{
+		opacity: 0;
+
+	}
+	100%{
+		opacity: 1;
+		background-image: url(ecf6a0_be08a5fc404b499a99b237b3149a4652_mv2.gif);
+		background-size:100px 100px ;
+
+
+	}
+}
+.lenbox{
+
+	width: 60px;
+	height: 60px;
+	background-color: rgba(0, 0, 0, 0.1
+	);
+	border: 10px solid white;
+
+	border-radius: 10px;
+	position: absolute;
+	top: -35%;
+	left: 71%;
+	animation: lenboxUP 1.5s 3s backwards;
+
+}
+
+@keyframes lenboxUP {
+	0%{
+		opacity: 0;
+
+		width: 50px;
+		height: 0px;
+		top: -5%;
+	}
+	100%{
+		width: 60px;
+		height: 60px;
+		top: -35%;
+	}
+}
+
+.flashlight{
+	width: 25px;
+	height: 25px;
+	background-color: white;
+	border-radius: 50%;
+	position: absolute;
+	top: -25%;
+	left: 77%;
+	animation: flashlightIn 1s 3.7s backwards;
+
+
+
+}
+@keyframes flashlightIn{
+	0%{
+	opacity: 0;
+
+	}
+	100%{
+	opacity: 1;
+
+	}
+}
+.flashlight:before{
+	content: "";
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+
+	background-color: rgba(149, 149, 149, 0.3);
+	position: absolute;
+	top: -500%;
+	left: -500%;
+	animation: flashOUT 0.5s 3.8s both;
+
+}
+@keyframes flashOUT{
+0%{opacity: 0;}
+40%{opacity: 1;}
+60%{opacity: 0;}
+90%{opacity: 1;}
+100%{opacity: 0;}
+}
+.photo{
+
+width: 330px;
+height: 330px;
+background-color: grey;
+overflow: hidden;
+
+border: 10px solid white;
+border-bottom: 30px solid white;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+animation: photoIN 2s 4s backwards,photoZOOMUP 1.5s 6s;
+transition: all 1s;
+
+}
+.photo:hover{
+
+	width: 400px;
+	height: 500px;
+	box-shadow: 4px 4px grey;
+}
+.photo:active{
+	overflow: visible;
+}
+.photo:before{
+	content: "";
+	width: 600px;
+	height: 400px;
+	overflow: hidden;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}	
+.photo:active:before{
+	z-index: 1;
+	
+	background: url(fafasf.gif);
+	background-size:600px 400px;
+	
+	transition: all 0.5s;
+}
+
+@keyframes photoIN{
+	0%{
+		opacity: 0;
+
+		top: 100%;
+		height: 0;
+		width: 0;
+
+		transform: translate(-50%,0);
+	}
+	100%{
+		opacity: 1;
+		top: 100%;
+		height: 100px;
+		width: 100px;
+		border: 5px solid white;
+		border-bottom: 15px solid white;
+
+		transform: translate(-50%,0);
+	}
+}
+@keyframes photoZOOMUP{
+	0%{
+		top: 100%;
+		transform: translate(-50%,0) rotateX(0deg);
+	}
+	100%{
+		top: 50%;
+		height: 330px;
+		width: 330px;
+		transform: translate(-50%,-50%) rotateX(360deg);
+	}
+}
+.photo .imgBOX{
+animation:imgSHOW 0.7s 7.7s backwards;
+}
+
+@keyframes imgSHOW{
+	0%{opacity: 0;}
+	100%{opacity: 1;}}
+
+.photo .imgBOX img{
+	width: 400px;
+	height: 330px;
+}
+.words h1{
+	color: black;
+	line-height: 10px;
+}
+.photo .words{
+	opacity: 0;
+	
+	transform: translateX(-20%);
+}
+.photo:hover .words{
+	opacity: 1;
+	transition: all 1s 0.3s;
+	transform: translateX(0%);
+
+}
+.hand{
+	width: 54.4px;
+	height: 100px;
+	background: url(2cecc5698c9d7557416952225adb42de.png);
+	background-size: cover;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	opacity: 0;
+
+	transform: translateX(-50%);
+	animation: handupdown 1.5s 7.8s infinite;
+
+}
+
+@keyframes handupdown{
+
+0%{top: 150%;}
+20%{opacity: 1;}
+80%{opacity: 1;}
+100%{top: 50%}
+
+}
+
+.photo:hover~.hand{
+	visibility: hidden;
+
+}
