@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>inline-block排版</title>
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="inline-blockstyle.css">
+</head>
+<body>
+	<div class="note">
+		<h1>筆記一下</h1>
+		<ol>
+			<li>用margin-right: -4px的方法移除每個col之間的4px的間隙容易造成跑版，盡量少用， <a href="https://css-tricks.com/fighting-the-space-between-inline-block-elements">其他取消間隙的方式可參考這裡</a><a href="https://paulcpederson.com/articles/inline-block-grid/">，還有這個</a>用以解決html的結構問題</li>
+			<li>當.col裡面放置部等量的文字發現跑版，可用vertical-align: top;解決</li>
+			<li>vertical-align的值有top,bottom,middle ，這是line-block特有的對齊方式</li>
+			<li>讓每個col可以隨網頁縮放，要用比例的方式</li>
+			<li>本範例的col比例會根據上層row的寬度</li>
+			<li>width:33.33333 雖然小數點後數值越多越精準
+			，但通常只會寫到5位數</li>
+			<li>間距的算法 通常使用8的倍數
+			，如margin-right:16px</li>
+		</ol>
+		<h4>觀察</h4>
+			<ol>
+				<li>當col的寬度寫50%時，發現最怎麼沒有變成兩列呢? 這時候你需要box-sizing: border-box;讓數值從內距以及邊框往內計算。 這樣就邊框的左右1px就往內算了。</li>
+				<li>當.col有5個發現第五個沒有排進去嗎? 雖然每個.col都是20%但是加上margin-right:16px就被推擠到下一行了，這時候可以採用padding的方式做推擠</li>
+				<li>這裡可以看到間距看似不見了，但是在開發人員工具中發現所謂的間距變成文字與文字間的距離了，怎麼沒有推出框與框的間距呢 ?</li>
+			</ol>
+
+	</div>
+	<div class="row">
+		<div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, praesentium!</div
+		><div class="col">Lorem, ipsum dolor sit, amet consectetur adipisicing elit. In quod, modi voluptate nesciunt voluptatem hic reprehenderit alias quasi veritatis labore.</div
+		><div class="col">Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Itaque iste, doloribus atque, at quia consequuntur eaque et laborum ea enim officia expedita. Nihil pariatur voluptates natus nobis in laudantium similique.</div
+		><div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, praesentium!</div><div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, praesentium!</div>
+	</div>
+	<h4>觀察2</h4>
+	<ol>
+		<li>未來在製作框線與內容時要特別注意，html裡面的寫法，框線與內容要分開，如下面的示範</li>
+		<li>現在就是標準的五欄式了排版了</li>
+	</ol>
+	<div class="row2">
+		<div class="col2">
+			<div class="content"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, commodi.</p></div>
+		</div><div class="col2">
+			<div class="content"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, commodi.</p></div>
+		</div><div class="col2">
+			<div class="content"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, commodi.</p></div>
+		</div><div class="col2">
+			<div class="content"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, commodi.</p></div>
+		</div><div class="col2">
+			<div class="content"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, commodi.</p></div>
+		</div>
+
+		
+	</div>
+</body>
+</html>
