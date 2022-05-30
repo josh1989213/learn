@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>float排版</title>
+	<link rel="stylesheet" href="float排版.css">
+</head>
+<body>
+	<H1>float排版的筆記+清除浮動</H1>
+	<h4>本章節充滿大量未知BUG請小心理解</h4>
+	<ol>
+		<li>float 浮動的意思</li>
+		<li>寫法float: left;</li>
+		<li>float有兩個數值lef左到右 right右到左</li>
+		<li>關於"清除浮動"，在前面的元件float的狀況下，會發現後面沒有定義float的元件也跟著浮動了，這時候就需要使用清除浮動</li>
+		<li>清除浮動的寫法clear: both 或是left ,right 通常寫both清除兩個方向的浮動</li>
+		<li>建議作法為:在所有浮動的元件後方增加一個clearfix的類別，而不是直接寫入clear請參閱本html檔案</li>
+
+	</ol>
+	<div class="row">
+		<div class="col">
+			<div class="content">
+				<p>1.Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Facere alias laudantium dicta, rerum accusantium necessitatibus, eos. Numquam itaque, repudiandae voluptatem!</p>
+			</div>
+		</div>
+		<div class="col">
+			<div class="content">
+				<p>2.Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Facere alias laudantium dicta, rerum accusantium necessitatibus, eos. Numquam itaque, repudiandae voluptatem!</p>
+			</div>
+		</div>
+		<div class="col">
+			<div class="content">
+				<p>3.Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Facere alias laudantium dicta, rerum accusantium necessitatibus, eos. Numquam itaque, repudiandae voluptatem!</p>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		</div>
+	<div class="footer"></div>
+	<h4>使用偽元素的清除浮動方式</h4>
+	<ol>
+		<li>偽元素的做法可以精簡html的結構，讓同層的row2跟clearfix2寫在一起</li>
+		<li>在一個div同時同層級"創作"兩個class 就只要在第一個class名稱後面加「空格」，如 div class="row2 clearfix2"></li>
+		<li>使用after可以這個偽元素出現在最後面，就有如上個範例的clearfix的概念</li>
+		<li>使用「height: 0;」
+		「visibility: hidden;」目的是使偽元素高度不要有撐開的機會，完全的隱藏</li>
+		<li><a target="_blank" href="https://kgl.idv.tw/2014/11/17/css-clearfix-%e6%b8%85%e9%99%a4%e6%b5%ae%e5%8b%95/">其他清除浮動的做法請參閱</a></li>
+	</ol>
+	<div class="row2 clearfix2">
+		<div class="col2">
+			<div class="content"><p>1.Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Exercitationem iusto animi culpa commodi saepe praesentium veniam, quas. Sed, illo, rerum.</p></div>
+		</div>
+		<div class="col2">
+			<div class="content"><p>2.Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Exercitationem iusto animi culpa commodi saepe praesentium veniam, quas. Sed, illo, rerum.</p></div>
+		</div>
+		<div class="col2">
+			<div class="content"><p>3.Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Exercitationem iusto animi culpa commodi saepe praesentium veniam, quas. Sed, illo, rerum.</p></div>
+		</div>
+	
+	</div>
+	<div class="footer2"></div>
+</body>
+</html>
