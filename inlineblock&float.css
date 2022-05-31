@@ -1,0 +1,53 @@
+.wrapper{
+	height: 100%;
+	width: 100%;
+	background-color: black;
+
+}
+.notewrapper{
+	width: auto;
+	height: auto;
+	background-color: grey;
+}
+
+.note{
+font-family: 微軟正黑體;
+color: white;
+padding: 10px;
+box-sizing: border-box;
+}
+.row-inline-block{
+	background-color: royalblue;
+	padding: 20px;
+}
+.col{
+	display: inline-block;
+	background-color: red;
+	border: 1px white solid;
+	height: 300px;
+	width: 25%;
+	box-sizing: border-box;
+	vertical-align: top;
+}
+.row-float{
+background-color: gray;
+padding: 20px;
+
+}
+.col-f{
+float: left;
+background-color: darkkhaki;
+border: 1px white solid;
+height: 300px;
+width: 25%;
+box-sizing: border-box;
+
+}
+.row-floatClearFIX:after{
+	content: "";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+
+}
