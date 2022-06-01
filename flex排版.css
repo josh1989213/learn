@@ -73,9 +73,8 @@ box-sizing: border-box;
 padding: 0 8px;
 width: 20%;
 height: 200px;
--webkit-flex: 1;
--moz-flex: 1;
--ms-flex: 1;
+flex: 1;
+
 }
 .col-f-2{
 	flex: 3;
