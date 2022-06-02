@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>常見置中方式</title>
+	<link rel="stylesheet" href="center.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="notebox">
+			<div class="note">
+				<h1>常見置中方式</h1>
+
+				<ol>
+					<li>margin: 0 auto</li>
+					<li>inline ; inline-block
+					的行內置中方式</li>
+					<li>flex置中</li>
+					<li>position:absolute的置中</li>
+					<li>文字的置中</li>
+				</ol>
+			</div>
+		</div>
+		<h1>margin: 0 auto</h1>
+		<p>必須是區塊的元素</p>
+				<p>display必須是blocl或是flex才能用這種方式置中</p>
+				<p>寬度必須是定值</p>
+				<p>只能用在水平置中，不能垂直，較常用於網頁中較大的元素的排版</p>
+				<p>第二種寫法margin-right:auto; margin-left:auto;</p>
+		<div class="outter">
+			<div class="box box1">讓我去中間</div>
+		</div>
+		<h1>行內元素置中方式</h1>
+		<p>inline ; inline-block</p>
+		<p>需要同時控制內層跟外層
+		</p>
+		<p>外層寫上text-align: center;內層的元素被當成文字置中了</p>
+		<p>內層元素必須是inline或是inline-block</p>
+		<p>此時內層繼承了上層屬性所以裡面文字也置中了 如果不想要文字置中可在內層box中寫text-align: right等改寫屬性</p>
+		<p>這種置中方式常用於文字的置中</p>
+		<div class="outter outter2">
+			<div class="box">讓我去中間</div>
+		</div>
+		<h1>彈性排版flex的置中方式</h1>
+		<p>外層寫上display:flex ;內層寫margin:auto</p> <p>這種方式比margin: 0 auto更加靈活而且可以做到水平跟垂直的置中,上下左右置中</p>
+		<p>需要水平置中就寫margin: 0 auto</p>
+		<p>使用justify-content: center;讓框框置中</p>
+		<p>align-items: center;垂直置中</p>
+		<p>垂直置中也可在內層寫align-self: center，這時候外層就不用align-items: center了</p>
+		<div class="outter outter3">
+			<div class="box">讓我去中間</div>
+		</div>
+		<h1>position:absolute的置中方式</h1>
+		<p style="line-height: 20px;">.outter4{ <br>
+		position: relative;} <br>
+		.outter4 .box{ <br>
+		position: absolute; <br>
+		top: 50%; <br>
+		left: 50%; <br>
+		transform: <br>translate(-50%,-50%)}<br>
+		</p>
+		<p>這種作法其實彈性不大，不太會用來做大型排版</p>
+		<div class="outter outter4">
+			<div class="box">讓我去中間</div>
+		</div>
+		<h1>文字的置中</h1>
+		<p>text-align: center;做文字水平置中</p>
+		<p>利用行高做文字垂直置中，寫line-height: ".box2的高度 "</p>
+		<div class="outter">
+			<div class="box box2">讓我去中間</div>
+		</div>
+	</div>
+	
+</body>
+</html>
